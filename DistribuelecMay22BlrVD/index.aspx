@@ -232,20 +232,19 @@
                 <!-- Main content -->
                 <section class="content container-fluid">
                     <div class="box box-solid center-block" style="max-width: 90%;">
-                        <table style="width:100%">
-                            <tr>
-                                <td>
-                                    <img src="images/GSI-Logo-Final-1-174x107.jpg"     width="350px" /></td>
-
-                                <td>
-                                    <div style="text-align: center; font-size:50px; color:maroon; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-display:fallback;">
-                                        6th GARMENT SHOW OF INDIA <br /> 18-19-20 JULY 2022
-                                    </div>
-                                </td>
-                                <td>
-                                    <img src="images/side-logo-details.jpg" /></td>
-                            </tr>
-                        </table>
+                        <div class="row">
+                            <div class="col-md-4 text-left">
+                                <img src="images/GSI-Logo-Final-1-174x107.jpg" />
+                            </div>
+                            <div class="col-md-4 text-center" style="font:bolder 30px arial; color:maroon; vertical-align:text-bottom; ">
+                                6th GARMENT SHOW OF INDIA - 2022                                        
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <img src="images/side-logo-details.jpg" />
+                            </div>
+                        </div>
+                        
+                        
 
 
                     </div>

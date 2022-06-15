@@ -100,9 +100,9 @@
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont3e6e.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="images\1.png" />
     <Content Include="images\at.svg" />
     <Content Include="images\badgeemmaheader.jpg" />
+    <Content Include="images\business-visitor.JPG" />
     <Content Include="images\button.jpg" />
     <Content Include="images\Emailsnd.jpeg" />
     <Content Include="images\envelope.svg" />
@@ -111,6 +111,7 @@
     <Content Include="images\headerieema.jpg" />
     <Content Include="images\ieema-logo-1.png" />
     <Content Include="images\QR.png" />
+    <Content Include="images\side-logo-details.JPG" />
     <Content Include="images\Whatsapp.jpeg" />
     <Content Include="index.aspx" />
     <Content Include="jquery\dist\jquery.min.js" />

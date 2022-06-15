@@ -43,7 +43,7 @@ namespace DistribuelecMay22BlrVD
             {
                 con.Open();
             }
-            da = new SqlDataAdapter("select	RegID, Title, concat(FirstName,' ' ,LastName)as Fullname, CompanyName, Designation, Mobile_number, Email, City, Country, ReferenceId from DISTRIBUELECVISITOR  where ReferenceId='" + Request.QueryString["rId"] + "'", con);
+            da = new SqlDataAdapter("select	RegID, Title, concat(FirstName,' ' ,LastName)as Fullname, CompanyName, Designation, Mobile_number, Email, City, Country, ReferenceId from GarmentOfIndiaVISITOR  where ReferenceId='" + Request.QueryString["rId"] + "'", con);
             da.SelectCommand.CommandTimeout = 7200;
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -135,21 +135,21 @@ namespace DistribuelecMay22BlrVD
                 {
                     //string CCEMAIL = "";
                     //CCEMAIL = "panaceanaturalexpoindia@gmail.com";
-                    MailMessage msg = new MailMessage();
-                    msg.To.Add(EMAIL_ID.Trim());
-                    //msg.CC.Add(CCEMAIL.Trim());
-                    //Configure the address we are sending the mail from
-                    MailAddress address = new MailAddress("Distribuelec - Buildelec - Intelect 2022<ebadge@e-badge.in>");
-                    msg.From = address;
-                    msg.Subject = "Distribuelec - Buildelec - Intelect 2022 Visitor Registration Confirmation";
-                    msg.Body = MailText;
-                    msg.IsBodyHtml = true;
-                    SmtpClient client = new SmtpClient();
-                    client.Host = "relay-hosting.secureserver.net";
-                    client.Port = 25;
-                    client.UseDefaultCredentials = false;
-                    client.Credentials = new System.Net.NetworkCredential("ebadge@e-badge.in ", "Vss@1234");
-                    client.Send(msg);
+                    //MailMessage msg = new MailMessage();
+                    //msg.To.Add(EMAIL_ID.Trim());
+                    ////msg.CC.Add(CCEMAIL.Trim());
+                    ////Configure the address we are sending the mail from
+                    //MailAddress address = new MailAddress("Distribuelec - Buildelec - Intelect 2022<ebadge@e-badge.in>");
+                    //msg.From = address;
+                    //msg.Subject = "Distribuelec - Buildelec - Intelect 2022 Visitor Registration Confirmation";
+                    //msg.Body = MailText;
+                    //msg.IsBodyHtml = true;
+                    //SmtpClient client = new SmtpClient();
+                    //client.Host = "relay-hosting.secureserver.net";
+                    //client.Port = 25;
+                    //client.UseDefaultCredentials = false;
+                    //client.Credentials = new System.Net.NetworkCredential("ebadge@e-badge.in ", "Vss@1234");
+                    //client.Send(msg);
                     //ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Your Details Sent Successfull.');", true);
                     count = 1;
                 }
