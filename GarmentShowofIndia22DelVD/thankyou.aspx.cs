@@ -133,24 +133,30 @@ namespace DistribuelecMay22BlrVD
                 EmailSent = Session["EmailSent"].ToString();
                 if (EmailSent == "1" && count == 0)
                 {
-                    //string CCEMAIL = "";
+                    string CCEMAIL = "";
                     //CCEMAIL = "panaceanaturalexpoindia@gmail.com";
-                    //MailMessage msg = new MailMessage();
-                    //msg.To.Add(EMAIL_ID.Trim());
-                    ////msg.CC.Add(CCEMAIL.Trim());
+                    MailMessage msg = new MailMessage();
+                    msg.To.Add(EMAIL_ID.Trim());
+                    //msg.CC.Add(CCEMAIL.Trim());
+
+                    string fromEMail = ConfigurationManager.AppSettings["FromEmail"].ToString();
+                    string _LoginEmail = ConfigurationManager.AppSettings["emailLogin"].ToString();
+                    string _LoginPassword= ConfigurationManager.AppSettings["emailPassword"].ToString();
+
                     ////Configure the address we are sending the mail from
                     //MailAddress address = new MailAddress("Distribuelec - Buildelec - Intelect 2022<ebadge@e-badge.in>");
-                    //msg.From = address;
-                    //msg.Subject = "Distribuelec - Buildelec - Intelect 2022 Visitor Registration Confirmation";
-                    //msg.Body = MailText;
-                    //msg.IsBodyHtml = true;
-                    //SmtpClient client = new SmtpClient();
-                    //client.Host = "relay-hosting.secureserver.net";
-                    //client.Port = 25;
-                    //client.UseDefaultCredentials = false;
-                    //client.Credentials = new System.Net.NetworkCredential("ebadge@e-badge.in ", "Vss@1234");
-                    //client.Send(msg);
-                    //ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Your Details Sent Successfull.');", true);
+                    MailAddress address = new MailAddress(fromEMail.ToString());
+                    msg.From = address;
+                    msg.Subject = "Garment Show of India- 2022 - Visitor Registration Confirmation";
+                    msg.Body = MailText;
+                    msg.IsBodyHtml = true;
+                    SmtpClient client = new SmtpClient();
+                    client.Host = "relay-hosting.secureserver.net";
+                    client.Port = 25;
+                    client.UseDefaultCredentials = false;
+                    client.Credentials = new System.Net.NetworkCredential(_LoginEmail.ToString(), _LoginPassword.ToString());
+                    client.Send(msg);
+                    ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Your Details Sent Successfull.');", true);
                     count = 1;
                 }
 

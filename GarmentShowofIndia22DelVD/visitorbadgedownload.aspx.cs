@@ -41,7 +41,7 @@ namespace DistribuelecMay22BlrVD
                     con.Open();
                 }
 
-                da = new SqlDataAdapter("SELECT * FROM DISTRIBUELECVISITOR  WHERE Mobile_number='" + Request.QueryString["d"] + "'", con);
+                da = new SqlDataAdapter("SELECT * FROM GarmentOfIndiaVISITOR  WHERE Mobile_number='" + Request.QueryString["d"] + "'", con);
                 da.SelectCommand.CommandTimeout = 72000;
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -72,7 +72,7 @@ namespace DistribuelecMay22BlrVD
                 con.Open();
             }
 
-            da1 = new SqlDataAdapter("select * from DISTRIBUELECVISITOR where  Mobile_number='" + Request.QueryString["d"] + "'", con);
+            da1 = new SqlDataAdapter("select * from GarmentOfIndiaVISITOR where  Mobile_number='" + Request.QueryString["d"] + "'", con);
             DataTable dt1 = new DataTable();
             da1.Fill(dt1);
             if (dt1.Rows.Count > 0)

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="icon" href="images/ieema-logo-1.png?v=1" type="image/x-icon" />
-     <title>Distribuelec &#8211; Buildelec 2022 &#8211; IEEMA</title>
+     <title>Garment Show of India 2022</title>
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
 <!-- bootstrap css -->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -233,7 +233,7 @@
                 <section class="content container-fluid">
                     
                         <div class="box box-solid center-block" style="max-width: 800px;">
-                            <img src="images/headerieema.jpg" width="100%" />
+                            <img src="images/GSI-Logo-Final-1-174x107.jpg" width="100%" />
                         </div>
                         <h2 class="section-title text-center wow fadeInDown"><font color="#ba364e" size="+2"><b>VISITOR REGISTRATION</b></font></h2>
                        <%-- <p style="text-align: center;"><strong>Entry subject to Organizer’s discretion. Age limit 18 years and above. Please carry your visiting card for entry. </strong></p>--%>

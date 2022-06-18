@@ -61,7 +61,7 @@ namespace DistribuelecMay22BlrVD
                     {
                         con.Open();
                     }
-                    da = new SqlDataAdapter("SELECT * FROM DISTRIBUELECVISITOR WHERE Mobile_number = '" + mobile.Text + "'", con);
+                    da = new SqlDataAdapter("SELECT * FROM GarmentOfIndiaVISITOR WHERE Mobile_number = '" + mobile.Text + "'", con);
                     da.SelectCommand.CommandTimeout = 72000;
                     DataTable dt = new DataTable();
                     da.Fill(dt);
