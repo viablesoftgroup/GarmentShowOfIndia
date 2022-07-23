@@ -4,8 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head id="Head1" runat="server">
-<link rel="icon" href="images/ieema-logo-1.png?v=1" type="image/x-icon" />
-     <title>Distribuelec &#8211; Buildelec 2022 &#8211; IEEMA</title>
+<%--<link rel="icon" href="images/ieema-logo-1.png?v=1" type="image/x-icon" />--%>
+     <title>Garment Show of India - JULY 2022 :::::::::::::: </title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -224,9 +224,18 @@
             <div class="content-wrapper">
                 <!-- Main content -->
                 <section class="content container-fluid">
-                    <div class="box box-solid center-block" style="max-width: 90%;">
-                        <img src="images/headerieema.jpg" width="100%"  />
-                    </div>
+                       <div class="box box-solid center-block" style="max-width: 90%;">
+                        <div class="row">
+                            <div class="col-md-4 text-left">
+                                <img src="images/GSI-Logo-Final-1-174x107.jpg" />
+                            </div>
+                            <div class="col-md-4 text-center" style="font:bolder 30px arial; color:maroon; vertical-align:text-bottom; ">
+                                6th GARMENT SHOW OF INDIA - 2022                                        
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <img src="images/side-logo-details.jpg" />
+                            </div>
+                        </div>
                     <h2 class="section-title text-center wow fadeInDown"><font color="#44909D" size="+2"><b>Visitor Data Download</b></font> </h2> 
                     <%--<p style="text-align:center;"><strong>Entry subject to Organizer’s discretion. Age limit 25 years and above. Please carry your visiting card for entry. </strong></p>--%>
                      

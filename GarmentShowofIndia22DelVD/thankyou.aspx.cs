@@ -108,7 +108,7 @@ namespace DistribuelecMay22BlrVD
             {
                 string Emtemp = "";
 
-                Emtemp = "ieemavisitor.html";
+                Emtemp = "garmentavisitor.html";
 
                 EmailSent = Session["EmailSent"].ToString();
                 string STRQR;
@@ -139,13 +139,15 @@ namespace DistribuelecMay22BlrVD
                     msg.To.Add(EMAIL_ID.Trim());
                     //msg.CC.Add(CCEMAIL.Trim());
 
-                    string fromEMail = ConfigurationManager.AppSettings["FromEmail"].ToString();
+                    //string fromEMail = ConfigurationManager.AppSettings["FromEmail"].ToString();
                     string _LoginEmail = ConfigurationManager.AppSettings["emailLogin"].ToString();
                     string _LoginPassword= ConfigurationManager.AppSettings["emailPassword"].ToString();
 
                     ////Configure the address we are sending the mail from
                     //MailAddress address = new MailAddress("Distribuelec - Buildelec - Intelect 2022<ebadge@e-badge.in>");
-                    MailAddress address = new MailAddress(fromEMail.ToString());
+                    //MailAddress address = new MailAddress(fromEMail.ToString());
+
+                    MailAddress address = new MailAddress("Garment Show of India- 2022<ebadge@e-badge.in>");
                     msg.From = address;
                     msg.Subject = "Garment Show of India- 2022 - Visitor Registration Confirmation";
                     msg.Body = MailText;

@@ -54,7 +54,7 @@ namespace DistribuelecMay22BlrVD
             string constr = ConfigurationManager.ConnectionStrings["IEEMA"].ConnectionString;
             using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM DISTRIBUELECVISITOR order by ID"))
+                using (SqlCommand cmd = new SqlCommand("SELECT ID, RegID, Title, FirstName, LastName, CompanyName, Designation, Address, Address1, City, State, PostalZip, Country, PhoneCountry_Code, PhoneCity_Code, Phone_number, Country_Code, Mobile_number, Email, Website FROM GarmentOfIndiaVISITOR order by ID"))
                 {
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
@@ -65,13 +65,13 @@ namespace DistribuelecMay22BlrVD
                             sda.Fill(dt);
                             using (XLWorkbook wb = new XLWorkbook())
                             {
-                                wb.Worksheets.Add(dt, "DISTRIBUELECVISITOR");
+                                wb.Worksheets.Add(dt, "GarmentOfIndiaVISITOR");
 
                                 Response.Clear();
                                 Response.Buffer = true;
                                 Response.Charset = "";
                                 Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                                Response.AddHeader("content-disposition", "attachment;filename=DISTRIBUELECVISITORLIST-" + DateTime.Now + ".xlsx");
+                                Response.AddHeader("content-disposition", "attachment;filename=GarmentOfIndiaVISITORLIST-" + DateTime.Now + ".xlsx");
                                 using (MemoryStream MyMemoryStream = new MemoryStream())
                                 {
                                     wb.SaveAs(MyMemoryStream);

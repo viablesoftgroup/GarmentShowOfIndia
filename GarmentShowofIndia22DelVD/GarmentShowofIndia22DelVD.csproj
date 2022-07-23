@@ -41,22 +41,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxControlToolkit">
-      <HintPath>..\..\..\..\..\Reference DLL\AjaxControlToolkit.dll</HintPath>
+      <HintPath>..\..\..\..\Reference DLL\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="ClosedXML">
-      <HintPath>..\..\..\..\..\Reference DLL\ClosedXML.dll</HintPath>
+      <HintPath>..\..\..\..\Reference DLL\ClosedXML.dll</HintPath>
     </Reference>
     <Reference Include="DocumentFormat.OpenXml">
-      <HintPath>..\..\..\..\..\Reference DLL\DocumentFormat.OpenXml.dll</HintPath>
+      <HintPath>..\..\..\..\Reference DLL\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
     <Reference Include="GenCode128">
-      <HintPath>..\..\..\..\..\Reference DLL\GenCode128.dll</HintPath>
+      <HintPath>..\..\..\..\Reference DLL\GenCode128.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp">
-      <HintPath>..\..\..\..\..\Reference DLL\itextsharp.dll</HintPath>
+      <HintPath>..\..\..\..\Reference DLL\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="MessagingToolkit.QRCode">
-      <HintPath>..\..\..\..\..\Reference DLL\MessagingToolkit.QRCode.dll</HintPath>
+      <HintPath>..\..\..\..\Reference DLL\MessagingToolkit.QRCode.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
@@ -69,10 +69,10 @@
       <HintPath>..\..\..\..\..\Reference DLL\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="QRCoder">
-      <HintPath>..\..\..\..\..\Reference DLL\QRCoder.dll</HintPath>
+      <HintPath>..\..\..\..\Reference DLL\QRCoder.dll</HintPath>
     </Reference>
     <Reference Include="QRCode_Demo">
-      <HintPath>..\..\..\..\..\Reference DLL\QRCode_Demo.dll</HintPath>
+      <HintPath>..\..\..\..\Reference DLL\QRCode_Demo.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -96,21 +96,19 @@
     <Content Include="css\AdminLTE.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\jquery.alerts.css" />
-    <Content Include="EmailTemplates\ieemavisitor.html" />
+    <Content Include="EmailTemplates\garmentavisitor.html" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont3e6e.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\at.svg" />
-    <Content Include="images\badgeemmaheader.jpg" />
+    <Content Include="images\badgeheadergarment.jpg" />
     <Content Include="images\business-visitor.JPG" />
     <Content Include="images\button.jpg" />
     <Content Include="images\Emailsnd.jpeg" />
     <Content Include="images\envelope.svg" />
     <Content Include="images\favicon.jpg" />
-    <Content Include="images\forAssitance-img.JPG" />
+    <Content Include="images\garmentheader1.jpg" />
     <Content Include="images\GSI-Logo-Final-1-174x107.jpg" />
-    <Content Include="images\headerieema.jpg" />
-    <Content Include="images\ieema-logo-1.png" />
     <Content Include="images\QR.png" />
     <Content Include="images\side-logo-details.JPG" />
     <Content Include="images\Whatsapp.jpeg" />
@@ -144,7 +142,9 @@
     <Content Include="thankyou.aspx" />
     <Content Include="visitorbadgedownload.aspx" />
     <Content Include="visitorsearch.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="alkdkliouoewncldeas.aspx.cs">

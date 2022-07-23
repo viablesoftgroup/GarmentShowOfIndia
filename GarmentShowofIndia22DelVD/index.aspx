@@ -1,10 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="DistribuelecMay22BlrVD.index" MaintainScrollPositionOnPostback="true" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <link rel="icon" href="images/ieema-logo-1.png?v=1" type="image/x-icon" />
+   <%-- <link rel="icon" href="images/ieema-logo-1.png?v=1" type="image/x-icon" />--%>
     <title>Garment Show of India - JULY 2022 :::::::::::::: </title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
     <!-- bootstrap css -->
@@ -230,7 +229,8 @@
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <!-- Main content -->
-                <section class="content container-fluid">
+                <section class="content container-fluid"> 
+
                     <div class="box box-solid center-block" style="max-width: 90%;">
                         <div class="row">
                             <div class="col-md-4 text-left">
@@ -248,7 +248,6 @@
 
 
                     </div>
-
                     <h2 class="section-title text-center wow fadeInDown"><font color="#44909D" size="+2"><b>VISITOR REGISTRATION</b></font></h2>
                     <%--<p style="text-align:center;"><strong>Entry subject to Organizer’s discretion. Age limit 25 years and above. Please carry your visiting card for entry. </strong></p>--%>
 

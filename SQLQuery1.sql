@@ -1,7 +1,7 @@
 
 select * from TypeOfVisitor
 select * from SMSEMAILDATADOWNLOADLOG  
-select * from DISTRIBUELECVISITOR order by id 
+select * from GarmentOfIndiaVISITOR order by id 
   
 
 CREATE TABLE [SMSEMAILDATADOWNLOADLOG](
