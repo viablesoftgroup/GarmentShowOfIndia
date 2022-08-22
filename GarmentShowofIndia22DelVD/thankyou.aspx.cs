@@ -18,6 +18,9 @@ using iTextSharp.text.html.simpleparser;
 using iTextSharp.text.pdf;
 using System.Text;
 using System.Drawing.Imaging;
+using iTextSharp.text;
+using iTextSharp.text.html.simpleparser;
+using iTextSharp.text.pdf;
 
 namespace DistribuelecMay22BlrVD
 {
@@ -108,7 +111,8 @@ namespace DistribuelecMay22BlrVD
             {
                 string Emtemp = "";
 
-                Emtemp = "garmentavisitor.html";
+                Emtemp = "NewEmailFormat.html"; //"garmentavisitor.html";
+                String pdfFileFOrmat = "PDFFormat.html";
 
                 EmailSent = Session["EmailSent"].ToString();
                 string STRQR;
@@ -119,6 +123,16 @@ namespace DistribuelecMay22BlrVD
                 str = new StreamReader(FilePath);
                 MailText = str.ReadToEnd();
                 str.Close();
+
+
+
+                string pdfFilePath;
+                string PDFMailText;
+                pdfFilePath = Server.MapPath("EmailTemplates\\" + pdfFileFOrmat + "");
+                str = new StreamReader(pdfFilePath);
+                PDFMailText = str.ReadToEnd();
+                str.Close();
+
                 //Repalce [newusername] = signup user name 
                 MailText = MailText.Replace("[REGNO]", REGNO);
                 MailText = MailText.Replace("[TITLE]", TITLE);
@@ -130,6 +144,11 @@ namespace DistribuelecMay22BlrVD
                 MailText = MailText.Replace("[MOBILE]", MOBILE);
                 MailText = MailText.Replace("[REFERANCEID]", REFERANCEID);
                 MailText = MailText.Replace("�", "\"");
+
+                PDFMailText = PDFMailText.Replace("[REGNO]", REGNO);
+                PDFMailText = PDFMailText.Replace("[TITLE]", TITLE);
+                PDFMailText = PDFMailText.Replace("[NAME]", NAME);
+
                 EmailSent = Session["EmailSent"].ToString();
                 if (EmailSent == "1" && count == 0)
                 {
@@ -141,7 +160,7 @@ namespace DistribuelecMay22BlrVD
 
                     //string fromEMail = ConfigurationManager.AppSettings["FromEmail"].ToString();
                     string _LoginEmail = ConfigurationManager.AppSettings["emailLogin"].ToString();
-                    string _LoginPassword= ConfigurationManager.AppSettings["emailPassword"].ToString();
+                    string _LoginPassword = ConfigurationManager.AppSettings["emailPassword"].ToString();
 
                     ////Configure the address we are sending the mail from
                     //MailAddress address = new MailAddress("Distribuelec - Buildelec - Intelect 2022<ebadge@e-badge.in>");
@@ -160,15 +179,33 @@ namespace DistribuelecMay22BlrVD
                     client.Send(msg);
                     ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Your Details Sent Successfull.');", true);
                     count = 1;
+
+
+
+                    Response.ContentType = "application/pdf";
+                    Response.AddHeader("content-disposition", "attachment;filename="+ REGNO + ".pdf");
+                    Response.Cache.SetCacheability(HttpCacheability.NoCache);
+                    StringWriter sw = new StringWriter();
+                                        
+                    StringReader sr = new StringReader(PDFMailText.ToString());
+                    Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 100f, 0f);
+                    HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
+                    PdfWriter.GetInstance(pdfDoc, Response.OutputStream);
+                    pdfDoc.Open();
+                    htmlparser.Parse(sr);
+                    pdfDoc.Close();
+                    Response.Write(pdfDoc);
+                    Response.End();
                 }
 
-                Response.Write(MailText);
+                Response.Write(PDFMailText);
             }
             catch (Exception ex)
             {
                 Response.Write(ex);
             }
         }
+
 
 
     }

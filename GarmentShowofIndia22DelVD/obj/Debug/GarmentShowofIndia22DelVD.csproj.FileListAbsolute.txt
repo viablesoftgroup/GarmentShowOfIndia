@@ -17,3 +17,16 @@ D:\SANOOP\EXHIBITION DATA\EXHIBITION DATA 2022\Garments Show of India 2022\Garme
 D:\SANOOP\EXHIBITION DATA\EXHIBITION DATA 2022\Garments Show of India 2022\GarmentShowofIndia22DelVD\obj\Debug\GarmentShowofIndia22DelVD.csprojResolveAssemblyReference.cache
 D:\SANOOP\EXHIBITION DATA\EXHIBITION DATA 2022\Garments Show of India 2022\GarmentShowofIndia22DelVD\obj\Debug\DistribuelecMay22BlrVD.dll
 D:\SANOOP\EXHIBITION DATA\EXHIBITION DATA 2022\Garments Show of India 2022\GarmentShowofIndia22DelVD\obj\Debug\DistribuelecMay22BlrVD.pdb
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\DistribuelecMay22BlrVD.dll.config
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\DistribuelecMay22BlrVD.dll
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\DistribuelecMay22BlrVD.pdb
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\Newtonsoft.Json.dll
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\obj\Debug\GarmentShowofIndia22DelVD.csproj.CoreCompileInputs.cache
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\obj\Debug\GarmentShowofIndia22DelVD.csproj.CopyComplete
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\obj\Debug\DistribuelecMay22BlrVD.dll
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\obj\Debug\DistribuelecMay22BlrVD.pdb
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\BouncyCastle.Crypto.dll
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\itextsharp.dll
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\itextsharp.xml
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\IronPdf.dll
+D:\MyPersonalWork\pochandson\GarmentShowOfIndia\GarmentShowofIndia22DelVD\bin\IronPdf.xml
