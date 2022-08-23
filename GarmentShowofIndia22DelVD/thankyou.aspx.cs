@@ -13,14 +13,9 @@ using QRCoder;
 using System.Drawing;
 using System.IO;
 using System.Net.Mail;
-using iTextSharp.text;
-using iTextSharp.text.html.simpleparser;
-using iTextSharp.text.pdf;
 using System.Text;
 using System.Drawing.Imaging;
-using iTextSharp.text;
-using iTextSharp.text.html.simpleparser;
-using iTextSharp.text.pdf;
+
 
 namespace DistribuelecMay22BlrVD
 {
@@ -182,20 +177,7 @@ namespace DistribuelecMay22BlrVD
 
 
 
-                    Response.ContentType = "application/pdf";
-                    Response.AddHeader("content-disposition", "attachment;filename="+ REGNO + ".pdf");
-                    Response.Cache.SetCacheability(HttpCacheability.NoCache);
-                    StringWriter sw = new StringWriter();
-                                        
-                    StringReader sr = new StringReader(PDFMailText.ToString());
-                    Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 100f, 0f);
-                    HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
-                    PdfWriter.GetInstance(pdfDoc, Response.OutputStream);
-                    pdfDoc.Open();
-                    htmlparser.Parse(sr);
-                    pdfDoc.Close();
-                    Response.Write(pdfDoc);
-                    Response.End();
+                  
                 }
 
                 Response.Write(PDFMailText);
